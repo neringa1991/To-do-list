@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+form {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+label,
+input {
+  display: block;
+  margin-top: 16px;
+}
+button {
+  cursor: pointer;
+  background: #d9d9d9;
+  color: #555;
+  margin-top: 5px;
+}
+table {
+  display: flex;
+  align-items: center;
+}
+.validation-error {
+  border: 1px solid #ff0000;
+}
+.user-table {
+  display: none;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.user-table td,
+.user-table th {
+  border: 1px solid #999999;
+  cursor: pointer;
+}
+.checked {
+  text-decoration: line-through;
+}
