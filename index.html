@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form>
+      <label
+        >Item to add:
+        <input
+          class="js-item"
+          type="text"
+          placeholder="Add a new to do item"
+          required
+          maxlength="160"
+      /></label>
+      <label
+        >Deadline: <input class="js-item__date" type="datetime-local"
+      /></label>
+      <button type="button" class="js-add">Add</button>
+    </form>
+    <table class="user-table js-user-table-wrapper">
+      <thead>
+        <th>Number</th>
+        <th>Description</th>
+        <th>Time left till deadline</th>
+        <th></th>
+        <th>Completed</th>
+      </thead>
+      <tbody class="js-user-table"></tbody>
+    </table>
+  </body>
+  <script src="script.js"></script>
+</html>
